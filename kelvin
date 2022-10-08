@@ -20,3 +20,12 @@ OrionLib:MakeNotification({
 })
 
 OrionLib:Init()
+
+Tab1:AddToggle({
+    Name = "Toggle",
+    Default = true,
+    Save = true,
+    Flag = "toggle"
+})
+
+print(OrionLib.Flags["toggle"].Value) -- prints the value of the toggle.
