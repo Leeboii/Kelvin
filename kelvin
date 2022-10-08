@@ -1,12 +1,12 @@
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
 local Window = OrionLib:MakeWindow({Name = "Kelvin 1.0", HidePremium = false, SaveConfig = true, ConfigFolder = "KOrionTest"})
 
-local Tab = Window:MakeTab({
+local localplayer = Window:MakeTab({
 	Name = "LocalPlayer",
 	PremiumOnly = false
 })
 
-Tab:AddSlider({
+localplayer:AddSlider({
 	Name = "Slider",
 	Min = 16,
 	Max = 1715,
@@ -19,12 +19,12 @@ Tab:AddSlider({
 	end    
 })
 
-local Tab = Window:MakeTab({
+local hub = Window:MakeTab({
 	Name = "Script Hub",
 	PremiumOnly = false
 })
 
-Tab:AddButton({
+hub:AddButton({
 	Name = "DarkHub",
 	Callback = function()
       		loadstring(game:HttpGet("https://raw.githubusercontent.com/RandomAdamYT/DarkHub/master/Init", true))()
