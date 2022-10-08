@@ -1,5 +1,5 @@
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
-local Window = OrionLib:MakeWindow({Name = "Kelvin 1.0", HidePremium = false, SaveConfig = true, ConfigFolder = "KOrionTest"})
+local Window = OrionLib:MakeWindow({Name = "Kelvin 1.0", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
 
 local localplayer = Window:MakeTab({
 	Name = "LocalPlayer",
@@ -60,12 +60,3 @@ OrionLib:MakeNotification({
 })
 
 OrionLib:Init()
-
-Tab1:AddToggle({
-    Name = "Toggle",
-    Default = true,
-    Save = true,
-    Flag = "toggle"
-})
-
-print(OrionLib.Flags["toggle"].Value) -- prints the value of the toggle.
