@@ -7,16 +7,23 @@ local localplayer = Window:MakeTab({
 })
 
 localplayer:AddSlider({
-	Name = "Slider",
+	Name = "WalkSpeed",
 	Min = 16,
 	Max = 1715,
 	Default = 5,
 	Color = Color3.fromRGB(255,255,255),
 	Increment = 1,
-	ValueName = "bananas",
+	ValueName = "WalkSpeed",
 	Callback = function(Value)
-		localplayer.Character.Humanoid.walkspeed
+		 game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = Value
 	end    
+})
+
+localplayer:AddButton({
+	Name = "Reset",
+	Callback = function()
+      		game.Players.LocalPlayer.Character.Humanoid.Health = Value
+  	end    
 })
 
 local hub = Window:MakeTab({
@@ -30,6 +37,21 @@ hub:AddButton({
       		loadstring(game:HttpGet("https://raw.githubusercontent.com/RandomAdamYT/DarkHub/master/Init", true))()
   	end    
 })
+
+hub:AddButton({
+	Name = "OwlHub",
+	Callback = function()
+      		loadstring(game:HttpGet("https://raw.githubusercontent.com/CriShoux/OwlHub/master/OwlHub.txt"))();
+  	end    
+})
+
+hub:AddButton({
+	Name = "Infinite Yield",
+	Callback = function()
+      		loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source"))();
+  	end    
+})
+
 
 OrionLib:MakeNotification({
 	Name = "Hello!",
