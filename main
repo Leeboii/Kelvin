@@ -1,3 +1,5 @@
 if game.PlaceId == 286090429 then -- Arsenal
      loadstring(game:HttpGet(('https://raw.githubusercontent.com/Leeboii/Kelvin/main/Arsenal'),true))()   
 end
+
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/Leeboii/Kelvin/main/Arsenal'),true))()
