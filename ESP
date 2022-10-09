@@ -9,7 +9,7 @@ local LegOff = Vector3.new(0, 3, 0)
 for i, v in pairs(game.Players:GetChildren()) do
     local BoxOutline = Drawing.new("Square")
     BoxOutline.Visible = false
-    BoxOutline.Color = Color3.new(255, 255, 255)
+    BoxOutline.Color = Color3.new(0, 0 ,0)
     BoxOutline.Thickness = 3
     BoxOutline.Transparency = 1
     BoxOutline.Filled = false
@@ -100,12 +100,9 @@ game.Players.PlayerAdded:Connect(function(v)
     coroutine.wrap(boxesp)()
 end)
 
-
---- Tut
-
 local esp_settings = {
-    textsize = 12,
-    colour = 255, 255, 255
+    textsize = 8,
+    colour = 255,255,255
 }
 
 local gui = Instance.new("BillboardGui")
@@ -113,7 +110,7 @@ local esp = Instance.new("TextLabel",gui)
 
 
 
-gui.Name = "ESP";
+gui.Name = "Cracked esp"; ---- properties of the esp
 gui.ResetOnSpawn = false
 gui.AlwaysOnTop = true;
 gui.LightInfluence = 0;
