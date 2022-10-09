@@ -1,5 +1,5 @@
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
-local Window = OrionLib:MakeWindow({Name = "Kelvin 1.0", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
+local Window = OrionLib:MakeWindow({Name = "Kelvin 1.0 - Universal", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
 
 --LocalPlayer
 
@@ -161,7 +161,5 @@ Visuals:AddToggle({
 		getgenv().teamcheck = Value
 	end    
 })
-
-OrionLib:Init()
-
+end
 OrionLib:Init()
