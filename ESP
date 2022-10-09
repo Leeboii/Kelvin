@@ -113,7 +113,7 @@ local esp = Instance.new("TextLabel",gui)
 
 
 
-gui.Name = "Cracked esp";
+gui.Name = "ESP";
 gui.ResetOnSpawn = false
 gui.AlwaysOnTop = true;
 gui.LightInfluence = 0;
