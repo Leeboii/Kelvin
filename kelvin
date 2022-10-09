@@ -43,7 +43,7 @@ hub:AddButton({
 })
 
 hub:AddButton({
-	Name = "Infinite Yield",
+	Name = "Infinite Yield FE",
 	Callback = function()
       		loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source"))();
   	end    
