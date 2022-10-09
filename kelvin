@@ -1,6 +1,8 @@
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
 local Window = OrionLib:MakeWindow({Name = "Kelvin 1.0", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
 
+--LocalPlayer
+
 local localplayer = Window:MakeTab({
 	Name = "LocalPlayer",
 	PremiumOnly = false
@@ -19,12 +21,7 @@ localplayer:AddSlider({
 	end    
 })
 
-localplayer:AddButton({
-	Name = "Reset",
-	Callback = function()
-      		game.Players.LocalPlayer.Character.Humanoid.Health = Value
-  	end    
-})
+--Script Hub
 
 local hub = Window:MakeTab({
 	Name = "Script Hub",
