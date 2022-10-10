@@ -1,14 +1,14 @@
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
 local Window = OrionLib:MakeWindow({Name = tostring(game:GetService("MarketplaceService"):GetProductInfo(game.PlaceId).Name), HidePremium = false, SaveConfig = false})
 
-local Visuals = Window:MakeTab({
-    Name = "Visuals",
-    PremiumOnly = false
-})
-
 local localplayer = Window:MakeTab({
 	Name = "LocalPlayer",
 	PremiumOnly = false
+})
+
+local Visuals = Window:MakeTab({
+    Name = "Visuals",
+    PremiumOnly = false
 })
 
 local Aim = Window:MakeTab({
