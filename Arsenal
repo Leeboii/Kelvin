@@ -97,6 +97,14 @@ Visuals:AddToggle({
 	end    
 })
 
+Tab:AddToggle({
+	Name = "Teamcheck",
+	Default = false,
+	Callback = function(Value)
+		getgenv().teamcheck = Value
+	end    
+})
+
 Visuals:AddToggle({
 	Name = "TeamCheck",
     Default = getgenv().teamcheck,
