@@ -97,17 +97,17 @@ Visuals:AddToggle({
 	end    
 })
 
-Visuals:AddToggle({
-	Name = "Teamcheck",
-	Default = false,
+Visuals:AddColorpicker({
+	Name = "Esp Color",
+	Default = Color3.fromRGB(255, 0, 0),
 	Callback = function(Value)
-		getgenv().teamcheck = Value
-	end    
+		getgenv().Color = Value
+	end	  
 })
 
 Visuals:AddToggle({
 	Name = "TeamCheck",
-    Default = getgenv().teamcheck,
+	Default = getgenv().teamcheck,
 	Callback = function(Value)
 		getgenv().teamcheck = Value
 	end    
