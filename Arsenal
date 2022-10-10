@@ -97,7 +97,7 @@ Visuals:AddToggle({
 	end    
 })
 
-Tab:AddToggle({
+Visuals:AddToggle({
 	Name = "Teamcheck",
 	Default = false,
 	Callback = function(Value)
